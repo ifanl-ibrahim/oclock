@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url(asset/time.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 45vh;
+}
+
+#chronometre {
+    padding: 100px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#chrono {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#button button {
+    font-size: 25px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#button button:not(:last-child) {
+    margin-right: 15px;
+}
+
+#button button:nth-child(2) {
+    background-color: #dfdfdf;
+}
+
+#button button:last-child {
+    background-color: #3a6eff;
+    color: white;
+}
+
+#horloge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    columns: #fff;
+    text-shadow: 0 2px 50px rgb(10, 10, 10, 0.5);
+}
+
+#heures {
+    width: 500px;
+    font-size: 100px;
+    /* font-family: 'Digital-7', sans-serif; */
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+    /* text-align: center; */
+}
+
+#date {
+    font-size: 25px;
+    /* font-family: 'Digital-7', sans-serif; */
+    padding-top: 10px;
+}
