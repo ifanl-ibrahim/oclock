@@ -10,17 +10,30 @@
     <title>O'clock</title>
 </head>
 <body>
+<header>
+    <button class="btn-ouvre">Ouvrir</button>
+    <div class="form-pop" id="monForm">
+        <ul>
+            <a class="horloge">Horloge</a>
+            <a class="chronometre">Chronomètre</a>
+            <a class="minuteur">Minuteur</a>
+            <a class="reveil">Réveil</a>
+        </ul>
+        <button class="btn-ferme">FERMER</button>
+    </div>
+    </div>
+</header>
 
 <!-- /*//////////// Horloge ////////////////////////////////////////*/ -->
 
-    <!-- <div id="horloge">
+    <div id="horloge">
         <div id="heures"></div>
         <div id="date"></div>
-    </div> -->
+    </div>
 
 <!-- /*//////////// Chronomètre ////////////////////////////////////////*/ -->
 
-    <!-- <div id="chronometre">
+    <div id="chronometre">
         <div id="chrono">00:00:00</div>
         <div id="button">
             <button id="reset" class="button">Reset</button>
@@ -32,7 +45,7 @@
             <h3>Temps :</h3>
             <ul id="tours"></ul>
         </div>
-    </div> -->
+    </div>
 
 <!-- /*//////////// Minuteur ////////////////////////////////////////*/ -->
 
@@ -46,6 +59,25 @@
                 <button id="start2" class="button">Démarrer</button>
             </div>
             <div id="alerte"></div>
+        </div>
+    </div>
+
+<!-- /*//////////// Réveil ////////////////////////////////////////*/ -->
+
+    <div id="reveil">
+        <div id="heure"></div>
+        <div id="form">
+            <input type="text" placeholder="Nom de l'alarme"> <span>-</span>
+            <input type="number" class="heur" max="24" min="0" placeholder="HH"> <span>:</span>
+            <input type="number" class="min" max="60" min="0" placeholder="MM"> <span>:</span>
+            <input type="number" class="sec" max="60" min="0" placeholder="SS">
+        </div>
+        <div id="button">
+            <button id="alarme" class="button">Enregistrer</button>
+            <button id="supprimer" class="button">supprimer</button>
+        </div>
+        <div id="alert">
+            <span></span>
         </div>
     </div>
 </body>
