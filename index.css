@@ -1,0 +1,325 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/time.svg);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: right;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size:  100px;
+    margin-top: 5%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: bold;
+    mix-blend-mode: multiply;
+    text-shadow: 5px 4px 11px rgb(0,0,0), 0 2px 5px rgb(0,0,0);
+}
+
+#horloge .horloge {
+    margin-top:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    text-shadow: -2px -2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0), 1px 1px 10px #000000;
+}
+
+#horloge .heures {
+    font-size: 110px;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 1px solid rgba(10,10,10,0.2);
+}
+
+#horloge .date {
+    font-size: 30px;
+    font-family: 'Tahoma', sans-serif;
+    padding-top: 10px;
+}
+
+
+/********* Buttons  **********/
+
+#horloge .bloc {
+    display: flex;
+    margin-top: 7%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px
+}
+
+@media (min-width: 768px) {
+    #horloge .button  {
+        padding: 0.25em 0.75em;
+    }
+}
+
+#horloge .button {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 3px solid white;
+    border-color: rgb(0, 0, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*////////////////////////////////////////////////*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#chrono .container {
+    min-height: 100px;
+    min-width: 400px;
+    border:4px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+}
+    
+#chrono .stopwatch {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    font-size: 4rem;
+}
+    
+#chrono button {
+    margin-top: 10%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+    
+#chrono button:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s;
+}
+    
+#chrono li {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    outline: none;
+}
+    
+#chrono .controls {
+    display: flex;
+    gap : 50px;
+    justify-content: center;
+}
+    
+#chrono a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+    
+#chrono img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+#minute .time input {
+    width: 80px;
+    height: 80px;
+    font-family: monospace;
+    font-size: 35px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+}
+    
+#minute div.timer {
+    padding: 30px;
+}
+    
+#minute #start, #pause, #resume {
+    margin: 20px 10px;
+    padding: 6px 20px;
+}
+    
+#minute #counter > div {
+    display: inline-block;
+    background: #DDD;
+    padding: 15px;
+    border-radius: 15%;
+    font-size: 100px;
+}
+    
+#minute #counter .count {
+    padding: 15px;
+    background: #BBB;
+    border-radius: 15%;
+    color: #333;
+}
+    
+#minute #counter .small-text {
+    font-size: 15px;
+    padding-top: 10px;
+}
+    
+#minute #resume {
+    display: none;
+}
+    
+#minute button {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 15px 0.1em 0.1em 0;
+    border: 3px solid rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 20px;
+}
+    
+#minute a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+    
+#minute img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+#rev h3 {
+    color: #009985;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+    
+#rev #myBox {
+    box-sizing: border-box;
+    box-shadow: 8px 4px 22px #333;
+    height: 385px;
+    border-radius: 20%;
+    padding-top: 100px;
+    background-color: #fff;
+    margin-top: 5vh;
+}
+    
+#rev #myDiv {
+    margin-top: 4%;
+}
+    
+#rev #time {
+    font-size: 80px;
+    margin-top: -65px;
+    color: #333;
+    text-shadow: 3px 3px 8px #00bfa6;
+}
+    
+#rev #mySelect {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    width: 125px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #009985;
+}
+    
+#rev button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff0000;
+    cursor: pointer;
+    border: 3px solid;
+}
+    
+#rev button:hover {
+    background-color: #000000;
+}
+    
+#rev .button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+    
+#rev .activ {
+    width: 105%;
+    display: flex;
+    justify-content:space-around;
+}
+    
+#rev #alarmHrs, #alarmMins, #alarmSecs {
+    width: 75px;
+    padding-left: 4px;
+    font-size: 25px;
+    margin-top: 2%;
+}
+    
+@media only screen and (max-width: 600px) {
+    #rev button {
+        margin-left: 2px;
+        margin-right: 4px;
+    }
+
+    #rev #time {
+        font-size: 45px;
+    }
+}
+    
+#rev #mySetButton {
+    color: rgb(0, 223, 0);
+}
+
+#rev a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+    
+#rev img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s;
+}
